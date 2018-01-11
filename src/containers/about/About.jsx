@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 
 import '../../styles/containers/about/about.css';
 
-import louise from '../../assets/louise.jpg';
+import dancing from '../../assets/louise.jpg';
+import freeride from '../../assets/louise2.jpg';
 
 class About extends Component {
     render() {
@@ -10,8 +11,13 @@ class About extends Component {
             <div className="about">
                 <img
                     className="about__image"
-                    src={ louise }
+                    src={ dancing }
                     alt="Louise concentrating while dancing on a longboard by a tall building."
+                />
+                <img
+                    className="about__image"
+                    src={ freeride }
+                    alt="Louise concentrating while sliding on a longboard in a grassy area."
                 />
             </div>
         );
