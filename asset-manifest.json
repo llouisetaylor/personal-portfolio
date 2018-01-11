@@ -1,10 +1,15 @@
 {
-  "main.css": "static/css/main.f6591484.css",
-  "main.css.map": "static/css/main.f6591484.css.map",
-  "main.js": "static/js/main.7abfe2fa.js",
-  "main.js.map": "static/js/main.7abfe2fa.js.map",
+  "main.css": "static/css/main.2977dc34.css",
+  "main.css.map": "static/css/main.2977dc34.css.map",
+  "main.js": "static/js/main.4ba33cbe.js",
+  "main.js.map": "static/js/main.4ba33cbe.js.map",
+  "static/media/beehappy.jpg": "static/media/beehappy.8a8bd685.jpg",
+  "static/media/doughuniverse.jpg": "static/media/doughuniverse.4fdfd76f.jpg",
   "static/media/github.svg": "static/media/github.95e8c988.svg",
+  "static/media/likeskin.jpg": "static/media/likeskin.65bc5731.jpg",
   "static/media/linkedin.svg": "static/media/linkedin.48ea32d4.svg",
   "static/media/louise.jpg": "static/media/louise.0c19dc07.jpg",
+  "static/media/louise2.jpg": "static/media/louise2.59a91173.jpg",
+  "static/media/make.jpg": "static/media/make.c8457e2e.jpg",
   "static/media/medium.svg": "static/media/medium.2661d430.svg"
 }
