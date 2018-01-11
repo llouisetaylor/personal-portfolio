@@ -1,0 +1,31 @@
+@mixin gradient-animator($direction, $color1, $color2) {
+    background-color: $color1;
+    background: linear-gradient($direction, $color1, $color2);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimateGradient 20s ease infinite;
+    -moz-animation: AnimateGradient 20s ease infinite;
+    -o-animation: AnimateGradient 20s ease infinite;
+    animation: AnimateGradient 20s ease infinite;
+
+    @-webkit-keyframes AnimateGradient {
+        0%{ background-position:0% 5% }
+        50%{ background-position:100% 95% }
+        100%{ background-position:0% 5% }
+    }
+    @-moz-keyframes AnimateGradient {
+        0%{ background-position:0% 5% }
+        50%{ background-position:100% 95% }
+        100%{ background-position:0% 5% }
+    }
+    @-o-keyframes AnimateGradient {
+        0%{ background-position:0% 5% }
+        50%{ background-position:100% 95% }
+        100%{ background-position:0% 5% }
+    }
+    @keyframes AnimateGradient {
+        0%{ background-position:0% 5% }
+        50%{ background-position:100% 95% }
+        100%{ background-position:0% 5% }
+    }
+}
