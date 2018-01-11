@@ -8,19 +8,4 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
-    h1 {
-        font-size: 60px;
-    }
-
-    &__profile {
-        text-align: center;
-    }
-
-    &__image {
-        height: 200px;
-        border: 5px solid white;
-        border-radius: 150px;
-        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
-    }
 }
