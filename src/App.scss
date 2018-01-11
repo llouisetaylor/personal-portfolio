@@ -13,27 +13,6 @@
         font-size: 60px;
     }
 
-    &__nav {
-        width: 100vw;
-        display: flex;
-    }
-
-    &__navitem {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-grow: 1;
-        height: 60px;
-        background-color: white;
-        margin-right: 1px;
-        text-transform: uppercase;
-
-        &:hover {
-        background-color: transparent;
-        color: white;
-        }
-    }
-
     &__profile {
         text-align: center;
     }
@@ -43,11 +22,5 @@
         border: 5px solid white;
         border-radius: 150px;
         box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
-    }
-
-    &__footer {
-        margin-bottom: 10px;
-        display: flex;
-        width: 180px;
     }
 }
