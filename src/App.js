@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, BrowserRouter } from 'react-router-dom';
+import { Route, HashRouter } from 'react-router-dom';
 
 import Navbar from './components/navbar/Navbar.jsx';
 import Home from './containers/home/Home.jsx';
@@ -13,7 +13,7 @@ import './styles/App.css';
 class App extends Component {
     render() {
         return (
-            <BrowserRouter>
+            <HashRouter>
                 <div className="App">
                     <Navbar />
                     <div className="App__content">
@@ -24,7 +24,7 @@ class App extends Component {
                     </div>
                     <Footer />
                 </div>
-            </BrowserRouter>
+            </HashRouter>
         );
     }
 }
