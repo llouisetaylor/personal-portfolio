@@ -13,21 +13,21 @@ class Porfolio extends Component {
             <div className="portfolio">
                 <h2>Projects I have supported and worked on</h2>
                 <section className="portfolio__projects">
-                    <a href="https://make.techwillsaveus.com">
+                    <a href="https://make.techwillsaveus.com" target="blank">
                         <img
                             className="portfolio__item"
                             src={ make }
                             alt="A screenshot of a website for kits made by Technology Will Save Us featuring lists of kit projects"
                         />
                     </a>
-                    <a href="https://play.google.com/store/apps/details?id=com.arnold&hl=en">
+                    <a href="https://play.google.com/store/apps/details?id=com.arnold&hl=en" target="blank">
                         <img
                             className="portfolio__item"
                             src={ doughUniverse }
                             alt="A screenshot from the Dough Universe mobile and tablet with playful illustrations of dough balls"
                         />
                     </a>
-                    <a href="https://mljgreer1.github.io">
+                    <a href="https://mljgreer1.github.io" target="blank">
                         <img
                             className="portfolio__item"
                             src={ likeSkin }
@@ -37,7 +37,7 @@ class Porfolio extends Component {
                 </section>
                 <h2>Fun projects and toys (personal)</h2>
                 <section className="portfolio__projects">
-                    <a href="/">
+                    <a href="https://llouisetaylor.github.io/JSToys/bee-happy/" target="blank">
                         <img
                             className="portfolio__item"
                             src={ beeHappy }

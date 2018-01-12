@@ -1,9 +1,8 @@
 @import 'mixins';
 
 .App {
-    height: 100vh;
+    min-height: 100vh;
     @include gradient-animator(180deg, #0E1933, #CA9D8E);
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
