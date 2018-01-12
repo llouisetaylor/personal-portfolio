@@ -1,7 +1,77 @@
+$graphic-position: 32px;
+
 .cv {
-    align-self: center;
+    display: flex;
+
+    &__graphic {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__circle {
+        background-color: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        margin: $graphic-position $graphic-position 0 $graphic-position;
+    }
+
+    &__stick {
+        background: linear-gradient(180deg, white, transparent);
+        height: calc(100% - 32px);
+        width: 5px;
+    }
 
     &__heading {
+        font-weight: bold;
+        border-bottom: 1px solid white;
+    }
+
+    &__section {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: 80% 10% 10%;
+        align-self: center;
+
+        * {
+            padding: 10px 0;
+        }
+    }
+
+    &__subheading {
+        font-weight: bold;
+    }
+
+    &__date {
+        text-align: right;
+        font-weight: bold;
+    }
+
+    &__description {
+        grid-column: 1 / span 2;
+        text-align: justify;
+    }
+
+    &__skills {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
         color: white;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        grid-column: 1 / span 2;
+    }
+
+    &__skill {
+        background-color: #5B2333;
+        padding: 3px;
+        border-radius: 3px;
+
+        &--container {
+            margin: 6px;
+        }
     }
 }

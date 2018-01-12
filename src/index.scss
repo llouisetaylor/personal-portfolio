@@ -16,16 +16,15 @@ a {
 }
 
 p a {
-    color: $light-orange;
-    background-color: $dark-blue;
-    border-radius: 5px;
+    color: white;
+    background-color: $highlight-red;
+    border-radius: 3px;
     padding: 3px;
     font-weight: bold;
-    line-height: 25px;
 
     &:hover {
         background: white;
-        color: $dark-blue;
+        color: $highlight-red;
     }
 }
 
@@ -58,6 +57,7 @@ p {
     font-family: $body-font;
     font-size: 16px;
     font-weight: 300;
+    line-height: 25px;
 }
 
 li {
@@ -65,4 +65,5 @@ li {
     font-family: $body-font;
     font-size: 16px;
     font-weight: 300;
+    margin: 12.5px;
 }

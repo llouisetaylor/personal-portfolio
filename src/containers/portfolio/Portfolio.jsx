@@ -17,9 +17,9 @@ class Porfolio extends Component {
                         <div className="portfolio__item">
                             <div className="portfolio__overlay">
                                 <ul>
-                                    <li>Lead a redesign project for our learning platform.</li>
-                                    <li>Built several experiences including a user sharing feature and support for multiple translations.</li>
-                                    <li>Technologies: React, Redux, Sass</li>
+                                    <li>Led a project to drive sign-ups on our online learning platform.</li>
+                                    <li>This involved a design overhaul, building several experiences including a user sharing feature and support for multiple translations.</li>
+                                    <li>Technologies: React, Redux, Sass.</li>
                                 </ul>
                             </div>
                             <img
@@ -48,8 +48,7 @@ class Porfolio extends Component {
                         <div className="portfolio__item">
                             <div className="portfolio__overlay">
                                 <ul>
-                                    <li>My first collaborative website, built as part of Code First: Girls beginners web development course.</li>
-                                    <li>Built a website for a friend's poetry magazine.</li>
+                                    <li>Built an online poetry magazine as part of a competition for Code First: Girls.</li>
                                     <li>Technologies: jQuery and VanillaJS.</li>
                                 </ul>
                             </div>
