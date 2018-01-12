@@ -1,3 +1,5 @@
+@import 'variables';
+
 body {
     margin: 0;
     padding: 0;
@@ -5,38 +7,38 @@ body {
 }
 
 a {
-    color: #0E1933;
+    color: $dark-blue;
     text-decoration: none;
-}
 
-a:hover {
-    color: #CA9D8E;
+    &:hover {
+        color: $light-orange;
+    }
 }
 
 p a {
-    color: #CA9D8E;
-    background-color: #0E1933;
+    color: $light-orange;
+    background-color: $dark-blue;
     border-radius: 5px;
     padding: 3px;
     font-weight: bold;
     line-height: 25px;
-}
 
-p a:hover {
-    background: white;
-    color: #0E1933;
+    &:hover {
+        background: white;
+        color: $dark-blue;
+    }
 }
 
 h1 {
     font-size: 100px;
-    font-family: 'Codystar', sans-serif;
+    font-family: $stars;
     font-weight: 500;
     color: white;
 }
 
 h2 {
     margin: 10px 0;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: $body-font;
     font-size: 25px;
     font-weight: 300;
     color: white;
@@ -45,7 +47,7 @@ h2 {
 h3 {
     margin: 0;
     color: white;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: $body-font;
     font-size: 20px;
     font-weight: 300;
 }
@@ -53,7 +55,14 @@ h3 {
 p {
     margin: 0;
     color: white;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: $body-font;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+li {
+    color: white;
+    font-family: $body-font;
     font-size: 16px;
     font-weight: 300;
 }

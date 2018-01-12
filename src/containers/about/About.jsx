@@ -9,7 +9,7 @@ class About extends Component {
     render() {
         return (
             <div className="about">
-                <p>I love longboarding (or anything that involves a board). I take part in an active longboarding community, I go to competitions and UK/world wide events, I have <a href="http://spin-skate.com/events/girl-skate-session-in-sheffield-uk/" target="blank">written for for S*pin Skate magazine</a> (a European magazine that emphasises women in skateboarding) and completed an endurance event across The Netherlands. I love science and technology and continually keep up to date with new progressions in the field. I also love to play piano.</p>
+                <p>I love longboarding (or anything that involves a board). I take part in an active longboarding community, I go to competitions and UK/world wide events, I have <a href="http://spin-skate.com/events/girl-skate-session-in-sheffield-uk/" target="blank">written for S*pin Skate magazine</a> (a European magazine that emphasises women in skateboarding) and completed an endurance event across The Netherlands. I love science and technology and continually keep up to date with new progressions in the field. I also love to play piano.</p>
                 <img
                     className="about__image"
                     src={ dancing }
