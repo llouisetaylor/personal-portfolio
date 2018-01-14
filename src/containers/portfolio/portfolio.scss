@@ -10,13 +10,23 @@
 
     h2 {
         font-size: 20px;
+        margin: 20px;
     }
 
     &__item {
         display: inline-block;
         position: relative;
+        overflow: hidden;
         width: 33.33vw;
         height: 28vh;
+
+        @media screen and (max-width: 838px) {
+            width: 50vw;
+        }
+
+        @media screen and (max-width: 552px) {
+            width: 100vw;
+        }
     }
 
     &__overlay {

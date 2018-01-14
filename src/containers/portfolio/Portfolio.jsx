@@ -13,8 +13,8 @@ class Porfolio extends Component {
             <div className="portfolio">
                 <h2>Projects I have worked on</h2>
                 <section className="portfolio__projects">
-                    <a href="https://make.techwillsaveus.com" target="blank">
-                        <div className="portfolio__item">
+                    <div className="portfolio__item">
+                        <a href="https://make.techwillsaveus.com" target="blank">
                             <div className="portfolio__overlay">
                                 <ul>
                                     <li>Led a project to drive sign-ups on our online learning platform.</li>
@@ -27,10 +27,10 @@ class Porfolio extends Component {
                                 src={ make }
                                 alt="A screenshot of a website for kits made by Technology Will Save Us featuring lists of kit projects"
                             />
-                        </div>
-                    </a>
-                    <a href="https://play.google.com/store/apps/details?id=com.arnold&hl=en" target="blank">
-                        <div className="portfolio__item">
+                        </a>
+                    </div>
+                    <div className="portfolio__item">
+                        <a href="https://play.google.com/store/apps/details?id=com.arnold&hl=en" target="blank">
                             <div className="portfolio__overlay">
                                 <ul>
                                     <li>Supported the development of a native app.</li>
@@ -42,10 +42,10 @@ class Porfolio extends Component {
                                 src={ doughUniverse }
                                 alt="A screenshot from the Dough Universe mobile and tablet with playful illustrations of dough balls"
                             />
-                        </div>
-                    </a>
-                    <a href="https://mljgreer1.github.io" target="blank">
-                        <div className="portfolio__item">
+                        </a>
+                    </div>
+                    <div className="portfolio__item">
+                        <a href="https://mljgreer1.github.io" target="blank">
                             <div className="portfolio__overlay">
                                 <ul>
                                     <li>Built an online poetry magazine as part of a competition for Code First: Girls.</li>
@@ -57,13 +57,13 @@ class Porfolio extends Component {
                                 src={ likeSkin }
                                 alt="A screenshot of an online poetry magazine with pastel tones and features."
                             />
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </section>
                 <h2>Personal projects</h2>
                 <section className="portfolio__projects">
-                    <a href="https://llouisetaylor.github.io/JSToys/bee-happy/" target="blank">
-                        <div className="portfolio__item">
+                    <div className="portfolio__item">
+                        <a href="https://llouisetaylor.github.io/JSToys/bee-happy/" target="blank">
                             <div className="portfolio__overlay">
                                 <ul>
                                     <li>This web app determines if a text entry is happy, sad or unknown based on a predetermined set of keywords and displays this on a scale.</li>
@@ -75,8 +75,8 @@ class Porfolio extends Component {
                                 src={ beeHappy }
                                 alt="A screenshot of a playful word game for children, with bright colours and a bumble bee character."
                             />
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </section>
             </div>
         );

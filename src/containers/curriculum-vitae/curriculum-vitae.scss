@@ -2,11 +2,17 @@ $graphic-position: 32px;
 
 .cv {
     display: flex;
+    padding: 20px 10px;
+    box-sizing: border-box;
 
     &__graphic {
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
     }
 
     &__circle {
