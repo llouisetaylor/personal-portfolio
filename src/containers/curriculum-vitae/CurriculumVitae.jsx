@@ -9,7 +9,7 @@ class CurriculumVitae extends Component {
     getEducationSection() {
         return data.education.map((establishment) => {
             return (
-                <section className="cv__section">
+                <section key={ establishment.title } className="cv__section">
                     <h3 className="cv__subheading">{ establishment.title }</h3>
                     <h3 className="cv__date">{ establishment.date }</h3>
                 </section>
@@ -20,7 +20,7 @@ class CurriculumVitae extends Component {
     getExperienceSection() {
         return data.experience.map((job) => {
             return (
-                <section className="cv__section">
+                <section key={ job.title } className="cv__section">
                     <h3 className="cv__subheading">{ job.title }</h3>
                     <h3 className="cv__date">{ job.date }</h3>
                 </section>
@@ -63,7 +63,7 @@ class CurriculumVitae extends Component {
                         <div className="cv__skills">
                             { this.getSkillsSection() }
                         </div>
-                        <p className="cv__description">I also have some experience with C++,Mocha, Chai, Node, Express, MongoDB and php.</p>
+                        <p className="cv__description">I also have some experience with C++, Mocha, Chai, Node, Express, MongoDB and php.</p>
                     </section>
                     <h2 className="cv__heading">Experience</h2>
                     { this.getExperienceSection() }
