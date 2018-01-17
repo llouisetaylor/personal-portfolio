@@ -1,35 +1,4 @@
 .profile {
-    height: 100%;
-    width: 100%;
     text-align: center;
-    overflow: hidden;
-
-    &__background {
-        height: 100vh;
-        width: auto;
-        position: absolute;
-        top: 0;
-        left: -100px;
-
-        &--front {
-            z-index: 1;
-            opacity: 0.8;
-        }
-
-        &--back {
-            z-index: 0;
-            opacity: 0.4;
-        }
-    }
-
-    &__heading {
-        position: relative;
-        z-index: 2;
-    }
-
-    &__subheading {
-        position: relative;
-        z-index: 2;
-    }
 }
 

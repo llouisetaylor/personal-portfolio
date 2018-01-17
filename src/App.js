@@ -10,11 +10,16 @@ import Footer from './components/footer/Footer.jsx';
 
 import './styles/App.css';
 
+import foregroundStars from './assets/foregroundstars.png';
+import backgroundStars from './assets/backgroundstars.png';
+
 class App extends Component {
     render() {
         return (
             <HashRouter>
                 <div className="App">
+                    <img src={ foregroundStars } className="App__background App__background--front" alt="Various constellations" />
+                    <img src={ backgroundStars } className="App__background App__background--back" alt="Various constellations" />
                     <Navbar />
                     <div className="App__content">
                         <Route exact path="/" component={ Home } />
