@@ -1,6 +1,7 @@
 .navbar {
     width: 100vw;
     display: flex;
+    z-index: 2;
 
     &__item {
         display: flex;

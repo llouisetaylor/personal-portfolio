@@ -24,7 +24,7 @@ module.exports = {
         },
         {
             title: 'Student at Code First: Girls',
-            date: 'Feb 2017 - Mar 2017',
+            date: 'Jan 2017 - Mar 2017',
             description: 'Top performer throughout a competitive course focused on HTML, CSS and JavaScript. Built a website for a poetry magazine, which can be seen in my portfolio.'
         },
         {

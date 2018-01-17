@@ -24,5 +24,8 @@
     "eject": "react-scripts eject",
     "build-css": "node-sass-chokidar src/ -o src/styles",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/styles --watch --recursive"
+  },
+  "devDependencies": {
+    "copyfiles": "^1.2.0"
   }
 }
