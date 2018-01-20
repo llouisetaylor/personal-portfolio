@@ -10,8 +10,9 @@ import Footer from './components/footer/Footer.jsx';
 
 import './styles/App.css';
 
-import foregroundStars from './assets/foregroundstars.png';
-import backgroundStars from './assets/backgroundstars.png';
+import foregroundStars from './assets/frontstars.png';
+import middlegroundStars from './assets/middlestars.png';
+import backgroundStars from './assets/backstars.png';
 
 class App extends Component {
     render() {
@@ -19,6 +20,7 @@ class App extends Component {
             <HashRouter>
                 <div className="App">
                     <img src={ foregroundStars } className="App__background App__background--front" alt="Various constellations" />
+                    <img src={ middlegroundStars } className="App__background App__background--middle" alt="Various constellations" />
                     <img src={ backgroundStars } className="App__background App__background--back" alt="Various constellations" />
                     <Navbar />
                     <div className="App__content">
