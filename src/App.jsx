@@ -30,7 +30,6 @@ class App extends Component {
 
     onMouseMove(e) {
         const translationRatio = 0.05;
-
         let radiusX = Math.round(e.nativeEvent.clientX) - App.centerX;
         let radiusY = Math.round(e.nativeEvent.clientY) - App.centerY;
 
