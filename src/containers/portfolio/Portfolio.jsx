@@ -4,6 +4,7 @@ import '../../styles/containers/portfolio/portfolio.css';
 
 import likeSkin from '../../assets/likeskin.jpg';
 import make from '../../assets/make.jpg';
+import electroHero from '../../assets/electro-hero.jpg';
 import beeHappy from '../../assets/beehappy.jpg';
 import doughUniverse from '../../assets/doughuniverse.jpg';
 
@@ -43,17 +44,18 @@ const Porfolio = () => (
                 </a>
             </div>
             <div className="portfolio__item">
-                <a href="https://mljgreer1.github.io" target="blank">
+                <a href="https://make.techwillsaveus.com/electro-hero-kit/" target="blank">
                     <div className="portfolio__overlay">
                         <ul>
-                            <li>Built an online poetry magazine as part of a competition for Code First: Girls.</li>
-                            <li>Technologies: jQuery and VanillaJS.</li>
+                            <li>Built an Avengers themed toy manual for a Tech Will Save Us X Disney collaboration.</li>
+                            <li>This involved building components with complex custom styling.</li>
+                            <li>Technologies: React and Sass.</li>
                         </ul>
                     </div>
                     <img
                         className="portfolio__image"
-                        src={ likeSkin }
-                        alt="A screenshot of an online poetry magazine with pastel tones and features."
+                        src={ electroHero }
+                        alt="A screenshot of an Iron Man themed toy manual."
                     />
                 </a>
             </div>
@@ -72,6 +74,21 @@ const Porfolio = () => (
                         className="portfolio__image"
                         src={ beeHappy }
                         alt="A screenshot of a playful word game for children, with bright colours and a bumble bee character."
+                    />
+                </a>
+            </div>
+            <div className="portfolio__item">
+                <a href="https://mljgreer1.github.io" target="blank">
+                    <div className="portfolio__overlay">
+                        <ul>
+                            <li>Built an online poetry magazine as part of a competition for Code First: Girls.</li>
+                            <li>Technologies: jQuery and VanillaJS.</li>
+                        </ul>
+                    </div>
+                    <img
+                        className="portfolio__image"
+                        src={ likeSkin }
+                        alt="A screenshot of an online poetry magazine with pastel tones and features."
                     />
                 </a>
             </div>

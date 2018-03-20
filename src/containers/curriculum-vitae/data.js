@@ -13,8 +13,12 @@ module.exports = {
     ],
     experience: [
         {
+            title: 'Junior Software Engineer at BBC',
+            date: 'Mar 2017 - Present'
+        },
+        {
             title: 'Junior Developer at Technology Will Save Us',
-            date: 'Oct 2017 - Present',
+            date: 'Oct 2017 - Mar 2017',
             description: 'I build exciting experiences for products used by thousands of children, most often using React, Redux and Sass. I actively influence design decisions when building our front-end. I have also led a front-end project to drive sign-ups on our online learning platform (see portfolio).'
         },
         {
