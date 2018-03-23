@@ -13,18 +13,13 @@ module.exports = {
     ],
     experience: [
         {
-            title: 'Junior Software Engineer at BBC',
-            date: 'Mar 2017 - Present'
+            title: 'Junior Front End Software Engineer at BBC',
+            date: 'Mar 2018 - Present'
         },
         {
             title: 'Junior Developer at Technology Will Save Us',
-            date: 'Oct 2017 - Mar 2017',
-            description: 'I build exciting experiences for products used by thousands of children, most often using React, Redux and Sass. I actively influence design decisions when building our front-end. I have also led a front-end project to drive sign-ups on our online learning platform (see portfolio).'
-        },
-        {
-            title: 'Development Intern at Technology Will Save Us',
-            date: 'Jul 2017 - Oct 2017',
-            description: 'Learned from experienced programmers and supported both front-end and back-end development of an online learning platform, an e-commerce website and a native app using a number of languages, frameworks and libraries.'
+            date: 'Jul 2017 - Mar 2018',
+            description: 'Learned from experienced programmers and supported both front-end and back-end development of an online learning platform, an e-commerce website and a native app using a number of languages, frameworks and libraries. I built exciting experiences for products used by thousands of children, most often using React, Redux and Sass. I actively influenced design decisions when building our front-end. I also led a front-end project to drive sign-ups on our online learning platform (see portfolio).'
         },
         {
             title: 'Student at Code First: Girls',
