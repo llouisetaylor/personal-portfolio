@@ -1,9 +1,15 @@
-module.exports = {
+import likeSkin from '../../assets/likeskin.jpg';
+import make from '../../assets/make.jpg';
+import beeHappy from '../../assets/beehappy.jpg';
+import doughUniverse from '../../assets/doughuniverse.jpg';
+import electroHero from '../../assets/electro-hero.jpg';
+
+export default {
     professional: [
         {
             url: 'https://make.techwillsaveus.com',
             image: {
-                url: '../../assets/make.jpg',
+                url: make,
                 alt: 'A screenshot of a website for kits made by Technology Will Save Us featuring lists of kit projects'
             },
             description: [
@@ -15,7 +21,7 @@ module.exports = {
         {
             url: 'https://play.google.com/store/apps/details?id=com.arnold&hl=en',
             image: {
-                url: '../../assets/doughuniverse.jpg',
+                url: doughUniverse,
                 alt: 'A screenshot from the Dough Universe mobile and tablet with playful illustrations of dough balls'
             },
             description: [
@@ -26,7 +32,7 @@ module.exports = {
         {
             url: 'https://make.techwillsaveus.com/electro-hero-kit/',
             image: {
-                url: '../../assets/electro-hero.jpg',
+                url: electroHero,
                 alt: 'A screenshot of an Iron Man themed toy manual.'
             },
             description: [
@@ -40,7 +46,7 @@ module.exports = {
         {
             url: 'https://llouisetaylor.github.io/JSToys/bee-happy/',
             image: {
-                url: '../../assets/beehappy.jpg',
+                url: beeHappy,
                 alt: 'A screenshot of a playful word game for children, with bright colours and a bumble bee character.'
             },
             description: [
@@ -51,7 +57,7 @@ module.exports = {
         {
             url: 'https://mljgreer1.github.io',
             image: {
-                url: '../../assets/likeskin.jpg',
+                url: likeSkin,
                 alt: 'A screenshot of an online poetry magazine with pastel tones and features.'
             },
             description: [

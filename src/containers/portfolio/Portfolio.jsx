@@ -10,12 +10,15 @@ const getProfessionalProjects = () => {
 
         const description = project.description.map((listItem) => {
             return (
-                <li>{ listItem }</li>
+                <li key={ listItem }>{ listItem }</li>
             );
         })
 
         return (
-            <div className="portfolio__item">
+            <div
+                key={ project.url }
+                className="portfolio__item"
+            >
                 <a href={ project.url } target="blank">
                     <div className="portfolio__overlay">
                         <ul>
@@ -39,12 +42,15 @@ const getPersonalProjects = () => {
 
         const description = project.description.map((listItem) => {
             return (
-                <li>{ listItem }</li>
+                <li key={ listItem }>{ listItem }</li>
             );
         })
 
         return (
-            <div className="portfolio__item">
+            <div
+                key={ project.url }
+                className="portfolio__item"
+            >
                 <a href={ project.url } target="blank">
                     <div className="portfolio__overlay">
                         <ul>
