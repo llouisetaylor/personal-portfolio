@@ -11,21 +11,21 @@
         justify-content: center;
         flex-grow: 1;
         height: 60px;
-        background-color: white;
+        background-color: transparent;
         margin-right: 1px;
         text-transform: uppercase;
         transition: .2s;
         font-family: 'Source Sans Pro', sans-serif;
+        color: white;
 
         &:hover {
+            background: linear-gradient(180deg,white 6px,transparent 6px);
             color: white;
-            background-color: transparent;
         }
     }
 
     .active {
-        background-color: transparent;
-        color: white;
+        background: linear-gradient(180deg,white 6px,transparent 6px);
     }
 
     &__text {
