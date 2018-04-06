@@ -1,3 +1,5 @@
+@import '../../breakpoints.scss';
+
 .navbar {
     width: 100vw;
     display: flex;
@@ -16,13 +18,29 @@
         font-family: 'Source Sans Pro', sans-serif;
 
         &:hover {
-            background-color: transparent;
             color: white;
+            background-color: transparent;
         }
     }
 
     .active {
         background-color: transparent;
         color: white;
+    }
+
+    &__text {
+        display: inline-block;
+
+        @media screen and (max-width: $sm-max) {
+            display: none;
+        }
+    }
+
+    &__icon {
+        display: none;
+
+        @media screen and (max-width: $sm-max) {
+            display: inline-block;
+        }
     }
 }
