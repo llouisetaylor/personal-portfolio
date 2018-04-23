@@ -23,24 +23,37 @@ class App extends Component {
         super();
 
         this.state = {
-            x: 0,
-            y: 0
+            mouseX: 0,
+            mouseY: 0,
+            backgroundX: 0,
+            backgroundY: 0
         }
     }
 
-    onMouseMove(e) {
-        const translationRatio = 0.05;
-        let radiusX = Math.round(e.nativeEvent.clientX) - App.centerX;
-        let radiusY = Math.round(e.nativeEvent.clientY) - App.centerY;
+    componentDidMount() {
+        this.animate();
+    }
 
+    animate() {
+        const translationRatio = 0.05;
+        const latency = 0.05;
+
+        this.setState(({ backgroundX, backgroundY, mouseX, mouseY })=> ({
+            backgroundX: (((1 - latency) * backgroundX) - (latency * translationRatio * mouseX)),
+            backgroundY: (((1 - latency) * backgroundY) - (latency * translationRatio * mouseY))
+        }))
+        window.requestAnimationFrame(() => this.animate())
+    }
+
+    onMouseMove(e) {
         this.setState({
-            x: - radiusX * translationRatio,
-            y: - radiusY * translationRatio
+            mouseX: e.nativeEvent.clientX - App.centerX,
+            mouseY: e.nativeEvent.clientY - App.centerY
         });
     }
 
     render() {
-        const { x, y } = this.state;
+        const { backgroundX, backgroundY } = this.state;
 
         return (
             <HashRouter>
@@ -52,19 +65,19 @@ class App extends Component {
                         src={ foregroundStars }
                         className="App__background App__background--front"
                         alt="Various constellations"
-                        style={{ transform: `translate(${x}px, ${y}px)` }}
+                        style={{ transform: `translate(${backgroundX}px, ${backgroundY}px)` }}
                     />
                     <img
                         src={ middlegroundStars }
                         className="App__background App__background--middle"
                         alt="Various constellations"
-                        style={ { transform: `translate(${x * 0.4}px, ${y * 0.4}px)` } }
+                        style={{ transform: `translate(${backgroundX * 0.4}px, ${backgroundY * 0.4}px)` }}
                     />
                     <img
                         src={ backgroundStars }
                         className="App__background App__background--back"
                         alt="Stars"
-                        style={{ transform: `translate(${x * 0.7}px, ${y * 0.7}px)` }}
+                        style={{ transform: `translate(${backgroundX * 0.7}px, ${backgroundY * 0.7}px)` }}
                     />
                     <Navbar />
                     <div className="App__content">
