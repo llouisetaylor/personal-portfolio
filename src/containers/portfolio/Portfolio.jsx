@@ -27,8 +27,8 @@ const getProfessionalProjects = () => {
                     </div>
                     <img
                         className="portfolio__image"
-                        src={ project.image.url }
-                        alt={ project.image.alt }
+                        src={ project.image }
+                        alt=""
                     />
                 </a>
             </div>
@@ -59,8 +59,8 @@ const getPersonalProjects = () => {
                     </div>
                     <img
                         className="portfolio__image"
-                        src={ project.image.url }
-                        alt={ project.image.alt }
+                        src={ project.image }
+                        alt=""
                     />
                 </a>
             </div>
