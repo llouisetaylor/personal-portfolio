@@ -4,15 +4,9 @@ import '../../styles/containers/portfolio/portfolio.css';
 
 import data from './data.js';
 
-const getProfessionalProjects = () => {
+const renderProjects = (projects) => {
 
-    return data.professional.map((project) => {
-
-        const description = project.description.map((listItem) => {
-            return (
-                <li key={ listItem }>{ listItem }</li>
-            );
-        })
+    return projects.map((project) => {
 
         return (
             <div
@@ -22,39 +16,13 @@ const getProfessionalProjects = () => {
                 <a href={ project.url } target="blank">
                     <div className="portfolio__overlay">
                         <ul>
-                            { description }
-                        </ul>
-                    </div>
-                    <img
-                        className="portfolio__image"
-                        src={ project.image }
-                        alt=""
-                    />
-                </a>
-            </div>
-        )
-    })
-}
-
-const getPersonalProjects = () => {
-
-    return data.personal.map((project) => {
-
-        const description = project.description.map((listItem) => {
-            return (
-                <li key={ listItem }>{ listItem }</li>
-            );
-        })
-
-        return (
-            <div
-                key={ project.url }
-                className="portfolio__item"
-            >
-                <a href={ project.url } target="blank">
-                    <div className="portfolio__overlay">
-                        <ul>
-                            { description }
+                            {
+                                project.description.map((listItem) => {
+                                    return (
+                                        <li key={ listItem }>{ listItem }</li>
+                                    );
+                                })
+                            }
                         </ul>
                     </div>
                     <img
@@ -72,11 +40,11 @@ const Porfolio = () => (
     <div className="portfolio">
         <h2>Professional projects</h2>
         <section className="portfolio__projects">
-            { getProfessionalProjects() }
+            { renderProjects(data.professional) }
         </section>
         <h2>Personal projects</h2>
         <section className="portfolio__projects">
-            { getPersonalProjects() }
+            { renderProjects(data.personal) }
         </section>
     </div>
 );

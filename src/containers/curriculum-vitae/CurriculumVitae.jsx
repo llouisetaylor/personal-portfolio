@@ -4,23 +4,12 @@ import '../../styles/containers/curriculum-vitae/curriculum-vitae.css';
 
 import data from './data.js';
 
-const getEducationSection = () => {
-    return data.education.map((establishment) => {
-        return (
-            <section key={ establishment.title } className="cv__section">
-                <h3 className="cv__subheading">{ establishment.title }</h3>
-                <h3 className="cv__date">{ establishment.date }</h3>
-            </section>
-        );
-    });
-}
-
-const getExperienceSection = () => {
-    return data.experience.map((job) => {
+const renderSection = (experience) => {
+    return experience.map((job) => {
         return (
             <section key={ job.title } className="cv__section">
                 <h3 className="cv__subheading">{ job.title }</h3>
-                <h3 className="cv__date">{ job.date }</h3>
+                <p className="cv__date">{ job.date }</p>
             </section>
         )
     });
@@ -60,12 +49,12 @@ const CurriculumVitae = () => (
                 <div className="cv__skills">
                     { getSkillsSection() }
                 </div>
-                <p className="cv__description">I also have some experience with C++, Mocha, Chai, Node, Express, MongoDB and php.</p>
+                <p className="cv__description">I also have some experience with C++, Mocha, Chai, MongoDB and AWS.</p>
             </section>
             <h2 className="cv__heading">Experience</h2>
-            { getExperienceSection() }
+            { renderSection(data.experience) }
             <h2 className="cv__heading">Education</h2>
-            { getEducationSection() }
+            { renderSection(data.education) }
         </div>
     </div>
 );
