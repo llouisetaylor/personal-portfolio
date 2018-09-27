@@ -1,6 +1,7 @@
 export default {
-    professional: [
+    featured: [
         {
+            title: 'Make',
             url: 'https://make.techwillsaveus.com',
             image: require('../../assets/make.jpg'),
             description: [
@@ -10,14 +11,16 @@ export default {
             ]
         },
         {
-            url: 'https://play.google.com/store/apps/details?id=com.arnold&hl=en',
-            image: require('../../assets/doughuniverse.jpg'),
+            title: 'Humans in Space',
+            url: 'https://humans-in-space.herokuapp.com',
+            image: require('../../assets/humans-in-space.jpg'),
             description: [
-                'Supported the development of a native app.',
-                'Technologies: React Native.'
+                'A single page app that uses the Open Notify API and Wikipedia API to show what people are in space, and some information about them.',
+                'Technologies: Vue.js and Express.'
             ]
         },
         {
+            title: 'Electro Dough Manual',
             url: 'https://make.techwillsaveus.com/electro-hero-kit/',
             image: require('../../assets/electro-hero.jpg'),
             description: [
@@ -27,16 +30,18 @@ export default {
             ]
         }
     ],
-    personal: [
+    other: [
         {
-            url: 'https://humans-in-space.herokuapp.com',
-            image: require('../../assets/humans-in-space.jpg'),
+            title: 'Dough Universe',
+            url: 'https://play.google.com/store/apps/details?id=com.arnold&hl=en',
+            image: require('../../assets/doughuniverse.jpg'),
             description: [
-                'A single page app that uses the Open Notify API and Wikipedia API to show what people are in space, and some information about them.',
-                'Technologies: Vue.js and Express.'
+                'Supported the development of a native app.',
+                'Technologies: React Native.'
             ]
         },
         {
+            title: 'Bee Happy',
             url: 'https://llouisetaylor.github.io/JSToys/bee-happy/',
             image: require('../../assets/beehappy.jpg'),
             description: [
@@ -45,6 +50,7 @@ export default {
             ]
         },
         {
+            title: 'Code:First Girls Competition',
             url: 'https://mljgreer1.github.io',
             image: require('../../assets/likeskin.jpg'),
             description: [
