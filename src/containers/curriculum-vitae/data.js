@@ -34,11 +34,13 @@ module.exports = {
     ],
     skills: [
         'ReactJS',
-        'JavaScript',
+        'Vue',
+        'Node',
         'HTML5',
         'CSS3',
         'Sass',
         'Redux',
+        'Express',
         'Git'
     ]
 };
