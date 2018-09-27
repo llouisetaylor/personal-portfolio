@@ -1,0 +1,38 @@
+.project {
+    margin: 5px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width: 356px;
+    height: 28vh;
+
+    @media screen and (max-width: 838px) {
+        width: 50vw;
+    }
+
+    @media screen and (max-width: 552px) {
+        width: 100vw;
+    }
+
+    &__overlay {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        background-color: rgba(64, 63, 76, 0.7);
+        width: 100%;
+        height: 100%;
+        transition: .2s;
+
+        &:hover {
+            opacity: 0;
+        }
+    }
+
+    &__image {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
