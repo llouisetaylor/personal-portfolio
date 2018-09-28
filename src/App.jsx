@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, HashRouter } from 'react-router-dom';
+import { Route, BrowserRouter } from 'react-router-dom';
 
 import Navbar from './components/navbar/Navbar.jsx';
 import Home from './containers/home/Home.jsx';
@@ -56,7 +56,7 @@ class App extends Component {
         const { backgroundX, backgroundY } = this.state;
 
         return (
-            <HashRouter>
+            <BrowserRouter>
                 <div
                     className="App"
                     onMouseMove={ this.onMouseMove.bind(this) }
@@ -88,7 +88,7 @@ class App extends Component {
                     </div>
                     <Footer />
                 </div>
-            </HashRouter>
+            </BrowserRouter>
         );
     }
 }

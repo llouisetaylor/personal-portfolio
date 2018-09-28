@@ -4,7 +4,9 @@
   "private": true,
   "homepage": "https://llouisetaylor.github.io",
   "dependencies": {
+    "express": "^4.16.3",
     "gh-pages": "^1.1.0",
+    "morgan": "^1.9.1",
     "node-sass-chokidar": "0.0.3",
     "npm-run-all": "^4.1.2",
     "react": "^16.2.0",
