@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import { Route, BrowserRouter } from 'react-router-dom';
+import { Switch } from 'react-router'
 
 import Navbar from './components/navbar/Navbar.jsx';
-import Home from './containers/home/Home.jsx';
-import Portfolio from './containers/portfolio/Portfolio.jsx';
-import CurriculumVitae from './containers/curriculum-vitae/CurriculumVitae.jsx';
-import About from './containers/about/About.jsx';
 import Footer from './components/footer/Footer.jsx';
+
+import routes from './routes/routes.js'
 
 import './styles/App.css';
 
@@ -56,7 +54,6 @@ class App extends Component {
         const { backgroundX, backgroundY } = this.state;
 
         return (
-            <BrowserRouter>
                 <div
                     className="App"
                     onMouseMove={ this.onMouseMove.bind(this) }
@@ -64,31 +61,27 @@ class App extends Component {
                     <img
                         src={ foregroundStars }
                         className="App__background App__background--front"
-                        alt="Various constellations"
+                        alt=""
                         style={{ transform: `translate(${backgroundX}px, ${backgroundY}px)` }}
                     />
                     <img
                         src={ middlegroundStars }
                         className="App__background App__background--middle"
-                        alt="Various constellations"
+                        alt=""
                         style={{ transform: `translate(${backgroundX * 0.4}px, ${backgroundY * 0.4}px)` }}
                     />
                     <img
                         src={ backgroundStars }
                         className="App__background App__background--back"
-                        alt="Stars"
+                        alt=""
                         style={{ transform: `translate(${backgroundX * 0.7}px, ${backgroundY * 0.7}px)` }}
                     />
                     <Navbar />
                     <div className="App__content">
-                        <Route exact path="/" component={ Home } />
-                        <Route path="/portfolio" component={ Portfolio } />
-                        <Route path="/cv" component={ CurriculumVitae } />
-                        <Route path="/about" component={ About } />
+                        { routes }
                     </div>
                     <Footer />
                 </div>
-            </BrowserRouter>
         );
     }
 }
