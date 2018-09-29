@@ -1,7 +1,13 @@
 .footer {
-    align-self: center;
     margin: 10px 0;
     display: flex;
+    justify-content: center;
     width: 180px;
     z-index: 3;
+
+    svg {
+        height: 40px;
+        width: 40px;
+        padding: 10px;
+    }
 }
