@@ -1,5 +1,5 @@
 ## llouisetaylor
 
-**_To see the source code please switch to the develop branch._**
+This portfolio showcases projects I have worked on since being software developer.
 
-This single page app was built with React on GitHub pages. This project has been created to display my work and progress since becoming a developer.
+_Some things in here may look a bit strange at the moment, migration from GitHub pages to AWS in progress._
