@@ -1,25 +1,33 @@
 @import '../../common/variables';
+@import '../../common/breakpoints';
 
 $spacer: 10px;
 $button-depth: 4px;
+$item-height: 40px;
 
 .footer {
     margin-top: $spacer;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     z-index: 3;
 
     svg {
-        height: 40px;
-        width: 40px;
+        height: $item-height;
+        width: $item-height;
         padding: $spacer;
+    }
+
+    &__links-container {
+        white-space: nowrap;
     }
 
     &__toggle-background {
         cursor: pointer;
         position: relative;
         margin: $spacer;
+        height: $item-height;
         z-index: 2;
         background: white;
         border: none;
@@ -27,6 +35,7 @@ $button-depth: 4px;
         font-family: $body-font;
         font-size: 18px;
         font-weight: bold;
+        white-space: nowrap;
 
         &:after {
             content: "";
@@ -39,22 +48,16 @@ $button-depth: 4px;
             outline: 2px solid white;
             box-sizing: border-box;
             z-index: 1;
+            transition: all 100ms;
         }
 
         &:hover:after, &:focus:after {
-            animation: press 100ms;
-            animation-fill-mode: forwards;
-        }
-    }
-
-    @keyframes press {
-        from {
-            top: $button-depth;
-            left: $button-depth;
-        }
-        to {
             top: 0;
             left: 0;
         }
+    }
+
+    @media only screen and (max-width: $md-max) {
+        justify-content: center;
     }
 }
