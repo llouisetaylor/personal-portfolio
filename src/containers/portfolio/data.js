@@ -6,7 +6,7 @@ export default {
             description: [
                 'Led a front-end project to drive sign-ups on our online learning platform.',
                 'This involved a design overhaul, building several experiences including a user sharing feature and support for multiple translations.',
-                'Technologies: React, Redux, Sass.'
+                'Technologies: React, Redux, Express and MongoDB.'
             ]
         },
         {
@@ -29,6 +29,14 @@ export default {
     ],
     personal: [
         {
+            url: '#',
+            image: require('../../assets/portfolio.jpg'),
+            description: [
+                'You are here 😀',
+                'Technologies: AWS, Express and React.'
+            ]
+        },
+        {
             url: 'https://humans-in-space.herokuapp.com',
             image: require('../../assets/humans-in-space.jpg'),
             description: [
@@ -41,14 +49,6 @@ export default {
             image: require('../../assets/beehappy.jpg'),
             description: [
                 'A small project that determines if a text entry is happy, sad or unknown based on a predetermined set of keywords and displays this on a scale.',
-                'Technologies: jQuery and VanillaJS.'
-            ]
-        },
-        {
-            url: 'https://mljgreer1.github.io',
-            image: require('../../assets/likeskin.jpg'),
-            description: [
-                'My first website, an online poetry magazine built for a competition for Code First: Girls.',
                 'Technologies: jQuery and VanillaJS.'
             ]
         }
