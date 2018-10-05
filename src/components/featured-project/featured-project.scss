@@ -1,9 +1,11 @@
-@import '../../variables';
+@import '../../common/variables';
+
+$gap: 10px;
 
 .featured-project {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-column-gap: 10px;
+  grid-column-gap: $gap;
   align-items: center;
   margin-bottom: 50px;
 
@@ -32,17 +34,36 @@
   }
 
   &__title {
+    text-transform: uppercase;
     font-weight: bold;
     text-align: center;
   }
 
   &__description {
-    padding: 10px;
+    border: 1px solid $light-orange;
+    padding: $gap;
     background: $dark-blue;
 
     li {
       list-style-type: none;
       margin: 5px 0;
     }
+  }
+
+  &__technologies {
+    text-align: right;
+    text-transform: uppercase;
+
+    li {
+      color: $light-orange;
+      padding: $gap;
+      display: inline;
+      list-style-type: none;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: $gap;
   }
 }
