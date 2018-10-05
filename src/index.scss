@@ -41,7 +41,7 @@ h1 {
 }
 
 h2 {
-    margin: 10px 0;
+    margin: $spacer 0;
     font-family: $body-font;
     font-size: 25px;
     font-weight: 300;
@@ -70,5 +70,4 @@ li {
     font-family: $body-font;
     font-size: 16px;
     font-weight: 300;
-    margin: 12.5px;
 }

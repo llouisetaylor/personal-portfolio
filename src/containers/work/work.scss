@@ -1,8 +1,10 @@
+@import '../../common/varibles';
+
 $graphic-position: 32px;
 
 .work {
     display: flex;
-    padding: 20px 10px;
+    padding: 20px $spacer;
     box-sizing: border-box;
 
     &__heading {
@@ -17,7 +19,7 @@ $graphic-position: 32px;
         align-self: center;
 
         * {
-            padding: 10px 0;
+            padding: $spacer 0;
         }
     }
 

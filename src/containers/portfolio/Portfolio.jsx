@@ -31,7 +31,7 @@ const Porfolio = () => (
         <section className="portfolio__featured-projects">
             { renderFeaturedProjects(data.featured) }
         </section>
-        <h2>More projects...</h2>
+        <h2>More projects</h2>
         <section className="portfolio__projects">
             { renderProjects(data.other) }
         </section>

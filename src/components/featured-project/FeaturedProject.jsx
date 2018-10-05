@@ -10,7 +10,7 @@ const FeaturedProject = ({ project }) => (
 
     <div className="featured-project__right">
       <a href={project.url}>
-        <h2 className="featured-project__title">{project.title}</h2>
+        <h3 className="featured-project__title">{project.title}</h3>
       </a>
 
       <div className="featured-project__description">
