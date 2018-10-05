@@ -1,9 +1,10 @@
 .project {
-    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
     display: inline-block;
     position: relative;
     overflow: hidden;
-    width: 356px;
+    width: 29.7vw;
     height: 28vh;
 
     @media screen and (max-width: 838px) {

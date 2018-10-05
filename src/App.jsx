@@ -1,12 +1,9 @@
-import React, { Component } from 'react';
-import { Route, HashRouter } from 'react-router-dom';
+import React, { Component, Fragment } from 'react';
 
 import Navbar from './components/navbar/Navbar.jsx';
-import Home from './containers/home/Home.jsx';
-import Portfolio from './containers/portfolio/Portfolio.jsx';
-import CurriculumVitae from './containers/curriculum-vitae/CurriculumVitae.jsx';
-import About from './containers/about/About.jsx';
 import Footer from './components/footer/Footer.jsx';
+
+import routes from './routes/routes.js'
 
 import './styles/App.css';
 
@@ -26,7 +23,8 @@ class App extends Component {
             mouseX: 0,
             mouseY: 0,
             backgroundX: 0,
-            backgroundY: 0
+            backgroundY: 0,
+            background: true
         }
     }
 
@@ -38,7 +36,7 @@ class App extends Component {
         const translationRatio = 0.05;
         const latency = 0.05;
 
-        this.setState(({ backgroundX, backgroundY, mouseX, mouseY })=> ({
+        this.setState(({ backgroundX, backgroundY, mouseX, mouseY }) => ({
             backgroundX: (((1 - latency) * backgroundX) - (latency * translationRatio * mouseX)),
             backgroundY: (((1 - latency) * backgroundY) - (latency * translationRatio * mouseY))
         }))
@@ -52,43 +50,63 @@ class App extends Component {
         });
     }
 
+    toggleBackground = () => {
+        const { background } = this.state
+
+        this.setState({
+            background: !background
+        });
+    }
+
     render() {
-        const { backgroundX, backgroundY } = this.state;
+        const { backgroundX, backgroundY, background } = this.state;
+
+        const toggleBackgroundButton = (
+            <button
+                className="footer__toggle-background"
+                aria-label={`${background ? 'Disable' : 'Enable'} background animation`}
+                onClick={ this.toggleBackground }
+            >
+                { `${background ? 'Turn off' : 'Turn on'} background animation` }
+            </button>
+
+        );
 
         return (
-            <HashRouter>
-                <div
-                    className="App"
-                    onMouseMove={ this.onMouseMove.bind(this) }
-                >
-                    <img
-                        src={ foregroundStars }
-                        className="App__background App__background--front"
-                        alt="Various constellations"
-                        style={{ transform: `translate(${backgroundX}px, ${backgroundY}px)` }}
-                    />
-                    <img
-                        src={ middlegroundStars }
-                        className="App__background App__background--middle"
-                        alt="Various constellations"
-                        style={{ transform: `translate(${backgroundX * 0.4}px, ${backgroundY * 0.4}px)` }}
-                    />
-                    <img
-                        src={ backgroundStars }
-                        className="App__background App__background--back"
-                        alt="Stars"
-                        style={{ transform: `translate(${backgroundX * 0.7}px, ${backgroundY * 0.7}px)` }}
-                    />
-                    <Navbar />
-                    <div className="App__content">
-                        <Route exact path="/" component={ Home } />
-                        <Route path="/portfolio" component={ Portfolio } />
-                        <Route path="/cv" component={ CurriculumVitae } />
-                        <Route path="/about" component={ About } />
-                    </div>
-                    <Footer />
+            <div
+                className={ `App ${background ? '' : 'hide-background'}` }
+                onMouseMove={ this.onMouseMove.bind(this) }
+            >
+                {
+                    background
+                        ? <Fragment>
+                            <img
+                                src={ foregroundStars }
+                                className="App__background App__background--front"
+                                alt=""
+                                style={ { transform: `translate(${backgroundX}px, ${backgroundY}px)` } }
+                            />
+                            <img
+                                src={ middlegroundStars }
+                                className="App__background App__background--middle"
+                                alt=""
+                                style={ { transform: `translate(${backgroundX * 0.4}px, ${backgroundY * 0.4}px)` } }
+                            />
+                            <img
+                                src={ backgroundStars }
+                                className="App__background App__background--back"
+                                alt=""
+                                style={ { transform: `translate(${backgroundX * 0.7}px, ${backgroundY * 0.7}px)` } }
+                            />
+                        </Fragment>
+                        : null
+                }
+                <Navbar />
+                <div className="App__content" role="main">
+                    { routes }
                 </div>
-            </HashRouter>
+                <Footer toggleBackgroundButton={ toggleBackgroundButton } />
+            </div>
         );
     }
 }

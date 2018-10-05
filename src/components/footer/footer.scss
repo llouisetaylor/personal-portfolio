@@ -1,7 +1,63 @@
+@import '../../common/variables';
+@import '../../common/breakpoints';
+
+$spacer: 10px;
+$button-depth: 4px;
+$item-height: 40px;
+
 .footer {
-    align-self: center;
-    margin: 10px 0;
+    margin-top: $spacer;
+    width: 100%;
     display: flex;
-    width: 180px;
+    justify-content: space-between;
+    flex-wrap: wrap;
     z-index: 3;
+
+    svg {
+        height: $item-height;
+        width: $item-height;
+        padding: $spacer;
+    }
+
+    &__links-container {
+        white-space: nowrap;
+    }
+
+    &__toggle-background {
+        cursor: pointer;
+        position: relative;
+        margin: $spacer;
+        height: $item-height;
+        z-index: 2;
+        background: white;
+        border: none;
+        color: $dark-blue;
+        font-family: $body-font;
+        font-size: 18px;
+        font-weight: bold;
+        white-space: nowrap;
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: $button-depth;
+            left: $button-depth;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            outline: 2px solid white;
+            box-sizing: border-box;
+            z-index: 1;
+            transition: all 100ms;
+        }
+
+        &:hover:after, &:focus:after {
+            top: 0;
+            left: 0;
+        }
+    }
+
+    @media only screen and (max-width: $md-max) {
+        justify-content: center;
+    }
 }
