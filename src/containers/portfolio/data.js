@@ -50,8 +50,7 @@ export default {
       url: "https://llouisetaylor.github.io/JSToys/bee-happy/",
       image: require("../../assets/beehappy.jpg"),
       description: [
-        "A small project that determines if a text entry is happy, sad or unknown based on a predetermined set of keywords and displays this on a scale.",
-        "Technologies: jQuery and VanillaJS."
+        "A small project that determines if a text entry is happy, sad or unknown based on a predetermined set of keywords and displays this on a scale."
       ],
       technologies: ["jQuery", "VanillaJS"]
     },

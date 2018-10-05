@@ -11,12 +11,18 @@ const Project = ({ project }) => (
   >
     <div className="project">
       <div className="project__overlay">
-        <ul id="project-description">
-          {
-            project.description.map(listItem => {
-              return <li key={listItem}>{listItem}</li>;
-            })
-          }
+        <h3 className="project__title">{ project.title }</h3>
+
+        <ul className="project__description" id="project-description">
+          {project.description.map(listItem => {
+            return <li key={listItem}>{listItem}</li>;
+          })}
+        </ul>
+
+        <ul className="project__technologies">
+          {project.technologies.map(technology => {
+            return <li key={technology}>{technology}</li>;
+          })}
         </ul>
       </div>
       <img className="project__image" src={project.image} alt="" />
