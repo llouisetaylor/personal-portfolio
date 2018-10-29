@@ -1,11 +1,8 @@
 @import '../../common/breakpoints.scss';
 
 .navbar {
-    position: absolute;
-    top: 0;
     width: 100vw;
     display: flex;
-    z-index: 4;
 
     &__item {
         display: flex;

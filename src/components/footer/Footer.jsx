@@ -10,10 +10,8 @@ import twitter from '../../assets/twitter.svg';
 import codepen from '../../assets/codepen.svg';
 
 
-const Footer = ({ toggleBackgroundButton }) => (
+const Footer = () => (
     <div className="footer">
-        { toggleBackgroundButton }
-
         <div className="footer__links-container">
             <a href="https://github.com/llouisetaylor" target="blank" aria-label="GitHub">
                 <SVG src={ github } className="footer__icon" />

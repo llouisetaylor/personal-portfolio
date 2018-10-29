@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import SettingsBar from './components/settings-bar/SettingsBar';
 import Navbar from './components/navbar/Navbar.jsx';
 import Footer from './components/footer/Footer.jsx';
 import Background from './components/background/Background.jsx';
@@ -60,7 +61,7 @@ class App extends Component {
 
         const toggleBackgroundButton = (
             <button
-                className="footer__toggle-background"
+                className="settings-bar__toggle-background"
                 aria-label={`${background ? 'Disable' : 'Enable'} background animation`}
                 onClick={ this.toggleBackground }
             >
@@ -83,11 +84,17 @@ class App extends Component {
                         </div>
                         : null
                 }
-                <Navbar />
+
+                <div className="App__header">
+                    <SettingsBar toggleBackgroundButton={ toggleBackgroundButton } />
+                    <Navbar />
+                </div>
+
                 <div className="App__content" role="main">
                     { routes }
                 </div>
-                <Footer toggleBackgroundButton={ toggleBackgroundButton } />
+
+                <Footer />
             </div>
         );
     }

@@ -10,9 +10,15 @@
         position: fixed;
     }
 
+    &__header {
+        position: absolute;
+        top: 0;
+        z-index: 4;
+    }
+
     &__content {
         min-height: 100vh;
-        padding: 70px 0;
+        padding: 140px 0;
         box-sizing: border-box;
         display: flex;
         justify-content: center;
