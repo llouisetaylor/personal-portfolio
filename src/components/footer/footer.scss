@@ -6,6 +6,8 @@ $button-depth: 4px;
 $item-height: 40px;
 
 .footer {
+    position: absolute;
+    bottom: 0;
     margin-top: $spacer;
     width: 100%;
     display: flex;

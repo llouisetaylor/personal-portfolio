@@ -1,48 +1,18 @@
-@import 'common/mixins';
-@import 'common/variables';
+@import './common/variables';
 
 .App {
+    background: $dark-blue;
     position: relative;
     min-height: 100vh;
-    @include gradient-animator(180deg, #0E1933, #CA9D8E);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     overflow: hidden;
 
     &__background {
-        height: 100vh;
-        width: auto;
-        position: absolute;
-        top: 0;
-        left: 0;
-        will-change: transform;
-
-        &--front {
-            z-index: 2;
-            opacity: 0.8;
-        }
-
-        &--middle {
-            z-index: 1;
-            opacity: 0.6;
-        }
-
-        &--back {
-            z-index: 0;
-            opacity: 0.4;
-        }
+        position: fixed;
     }
 
     &__content {
+        padding: 70px 0;
         position: relative;
         z-index: 3;
     }
-
-}
-
-.hide-background {
-    background: $dark-blue;
-    animation: none;
 }

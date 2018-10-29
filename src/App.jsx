@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 
 import Navbar from './components/navbar/Navbar.jsx';
 import Footer from './components/footer/Footer.jsx';
@@ -66,20 +66,21 @@ class App extends Component {
             >
                 { `${background ? 'Turn off' : 'Turn on'} background animation` }
             </button>
-
         );
 
         return (
             <div
-                className={ `App ${background ? '' : 'hide-background'}` }
+                className="App"
                 onMouseMove={ this.onMouseMove.bind(this) }
             >
                 {
                     background
-                        ? <Background
-                            xOffset={ backgroundX }
-                            yOffset={ backgroundY }
-                        />
+                        ? <div className="App__background">
+                            <Background
+                                xOffset={ backgroundX }
+                                yOffset={ backgroundY }
+                            />
+                        </div>
                         : null
                 }
                 <Navbar />
