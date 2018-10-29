@@ -2,14 +2,11 @@ import React, { Component, Fragment } from 'react';
 
 import Navbar from './components/navbar/Navbar.jsx';
 import Footer from './components/footer/Footer.jsx';
+import Background from './components/background/Background.jsx';
 
 import routes from './routes/routes.js'
 
 import './styles/App.css';
-
-import foregroundStars from './assets/frontstars.png';
-import middlegroundStars from './assets/middlestars.png';
-import backgroundStars from './assets/backstars.png';
 
 class App extends Component {
 
@@ -79,26 +76,10 @@ class App extends Component {
             >
                 {
                     background
-                        ? <Fragment>
-                            <img
-                                src={ foregroundStars }
-                                className="App__background App__background--front"
-                                alt=""
-                                style={ { transform: `translate(${backgroundX}px, ${backgroundY}px)` } }
-                            />
-                            <img
-                                src={ middlegroundStars }
-                                className="App__background App__background--middle"
-                                alt=""
-                                style={ { transform: `translate(${backgroundX * 0.4}px, ${backgroundY * 0.4}px)` } }
-                            />
-                            <img
-                                src={ backgroundStars }
-                                className="App__background App__background--back"
-                                alt=""
-                                style={ { transform: `translate(${backgroundX * 0.7}px, ${backgroundY * 0.7}px)` } }
-                            />
-                        </Fragment>
+                        ? <Background
+                            xOffset={ backgroundX }
+                            yOffset={ backgroundY }
+                        />
                         : null
                 }
                 <Navbar />
