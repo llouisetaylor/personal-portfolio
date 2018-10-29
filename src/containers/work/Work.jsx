@@ -39,10 +39,6 @@ const getSkillsSection = () => {
 
 const Work = () => (
     <div className="work">
-        <div className="work__graphic">
-            <div className="work__circle" />
-            <div className="work__stick" />
-        </div>
         <div className="work__content">
             <h2 className="work__heading">Skills</h2>
             <section>
