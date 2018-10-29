@@ -4,6 +4,7 @@ import SettingsBar from './components/settings-bar/SettingsBar';
 import Navbar from './components/navbar/Navbar.jsx';
 import Footer from './components/footer/Footer.jsx';
 import Background from './components/background/Background.jsx';
+import Button from './components/inputs/button/Button.jsx'
 
 import routes from './routes/routes.js'
 
@@ -60,13 +61,12 @@ class App extends Component {
         const { backgroundX, backgroundY, background } = this.state;
 
         const toggleBackgroundButton = (
-            <button
-                className="settings-bar__toggle-background"
+            <Button
                 aria-label={`${background ? 'Disable' : 'Enable'} background animation`}
                 onClick={ this.toggleBackground }
             >
                 { `${background ? 'Turn off' : 'Turn on'} background animation` }
-            </button>
+            </Button>
         );
 
         return (

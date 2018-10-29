@@ -1,0 +1,19 @@
+@import '../../../common/variables';
+
+$button-color: $dark-blue;
+$button-depth: 4px;
+
+.button {
+    margin: $spacer;
+    cursor: pointer;
+    position: relative;
+    height: 40px;
+    z-index: 2;
+    background: $dark-blue;
+    border: none;
+    color: white;
+    font-family: $body-font;
+    font-size: 18px;
+    font-weight: bold;
+    white-space: nowrap;
+}
