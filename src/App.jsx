@@ -15,17 +15,13 @@ class App extends Component {
     static centerX = window.screen.availWidth / 2;
     static centerY = window.screen.availHeight / 2;
 
-    constructor() {
-        super();
-
-        this.state = {
-            mouseX: 0,
-            mouseY: 0,
-            backgroundX: 0,
-            backgroundY: 0,
-            background: true,
-            font: 'default'
-        }
+    state = {
+        mouseX: 0,
+        mouseY: 0,
+        backgroundX: 0,
+        backgroundY: 0,
+        background: true,
+        font: 'default'
     }
 
     componentDidMount() {
