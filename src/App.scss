@@ -3,7 +3,7 @@
 .App {
     background: $dark-blue;
     position: relative;
-    min-height: 100vh;
+    min-height: calc(100vh + 60px);
     overflow: hidden;
 
     &__background {
