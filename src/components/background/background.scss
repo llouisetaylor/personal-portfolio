@@ -1,0 +1,33 @@
+@import '../../common/mixins';
+@import '../../common/variables';
+
+.background {
+    height: 100vh;
+    width: 100vw;
+    width: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    will-change: transform;
+
+    &__gradient {
+        @include gradient-animator(180deg, #0E1933, #CA9D8E);
+        height: 100vh;
+        width: 100vw;
+    }
+
+    &__front {
+        z-index: 2;
+        opacity: 0.8;
+    }
+
+    &__middle {
+        z-index: 1;
+        opacity: 0.6;
+    }
+
+    &__back {
+        z-index: 0;
+        opacity: 0.4;
+    }
+}

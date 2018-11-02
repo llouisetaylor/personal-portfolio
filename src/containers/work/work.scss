@@ -1,8 +1,11 @@
+@import '../../common/variables';
+
 $graphic-position: 32px;
 
-.cv {
-    display: flex;
-    padding: 20px 10px;
+.work {
+    margin: 0 auto;
+    max-width: 650px;
+    padding: 20px $spacer;
     box-sizing: border-box;
 
     &__heading {
@@ -17,7 +20,7 @@ $graphic-position: 32px;
         align-self: center;
 
         * {
-            padding: 10px 0;
+            padding: $spacer 0;
         }
     }
 

@@ -1,15 +1,25 @@
+@import '../../common/variables';
+
 .portfolio {
 
-    &__projects {
-        margin-bottom: 35px;
+    &__featured-projects {
+        margin: auto;
+        max-width: 850px;
+    }
 
-        &:nth-last-child(1) {
-            margin-bottom: 0;
-        }
+    &__projects {
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     h2 {
-        font-size: 20px;
-        margin: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    h3 {
+        margin-bottom: $spacer;
     }
 }

@@ -16,8 +16,8 @@ const Navbar = () => (
             <i className="navbar__icon icon-laptop" />
         </NavLink>
 
-        <NavLink to="/cv" className="navbar__item" aria-label="CV">
-            <span className="navbar__text">CV</span>
+        <NavLink to="/work" className="navbar__item" aria-label="Work">
+            <span className="navbar__text">Work</span>
             <i className="navbar__icon icon-doc-text" />
         </NavLink>
 
