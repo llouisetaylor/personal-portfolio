@@ -23,7 +23,8 @@ class App extends Component {
             mouseY: 0,
             backgroundX: 0,
             backgroundY: 0,
-            background: true
+            background: true,
+            font: 'default'
         }
     }
 
@@ -57,8 +58,14 @@ class App extends Component {
         });
     }
 
+    changeFont = (e) => {
+        this.setState({
+            font: e.nativeEvent.target.value
+        });
+    }
+
     render() {
-        const { backgroundX, backgroundY, background } = this.state;
+        const { backgroundX, backgroundY, background, font } = this.state;
 
         const toggleBackgroundButton = (
             <Button
@@ -71,7 +78,7 @@ class App extends Component {
 
         return (
             <div
-                className="App"
+                className={`App ${font}`}
                 onMouseMove={ this.onMouseMove.bind(this) }
             >
                 {
@@ -86,7 +93,10 @@ class App extends Component {
                 }
 
                 <div className="App__header">
-                    <SettingsBar toggleBackgroundButton={ toggleBackgroundButton } />
+                    <SettingsBar
+                        toggleBackgroundButton={ toggleBackgroundButton }
+                        changeFont={ this.changeFont }
+                    />
                     <Navbar />
                 </div>
 

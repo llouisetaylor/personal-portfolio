@@ -2,13 +2,22 @@ import React from 'react';
 
 import '../../../styles/components/inputs/select/select.css';
 
+const toKebabCase = (string) => {
+    return string.replace(/\s+/g, '-').toLowerCase()
+}
+
 const getOptions = (options) => {
     return options.map((option, i) => {
-        return <option key={`${option}-${i}`}>{ option }</option>
+        return <option
+            key={ `${option}-${i}` }
+            value={ toKebabCase(option) }
+        >
+            { option }
+        </option>
     })
 }
 
-const Select = ({ text, ariaLabel, id, options }) => (
+const Select = ({ text, ariaLabel, id, options, onSelect }) => (
     <div className="select">
 
         <label
@@ -22,8 +31,10 @@ const Select = ({ text, ariaLabel, id, options }) => (
         <select
             className="select__dropdown button"
             id={ id }
+            onChange={ onSelect }
+            defaultValue=""
         >
-            <option value="" disabled selected>{ text }</option>
+            <option value="" disabled>{ text }</option>
             { getOptions(options) }
         </select>
 

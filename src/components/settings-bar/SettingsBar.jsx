@@ -4,7 +4,7 @@ import Select from '../inputs/select/Select.jsx';
 
 import '../../styles/components/settings-bar/settings-bar.css';
 
-const SettingsBar = ({ toggleBackgroundButton }) => (
+const SettingsBar = ({ toggleBackgroundButton, changeFont }) => (
     <div className="settings-bar">
         { toggleBackgroundButton }
 
@@ -12,7 +12,8 @@ const SettingsBar = ({ toggleBackgroundButton }) => (
             text="Change font"
             ariaLabel="Choose a font"
             id="change-font"
-            options={['Arial','Comic Sans', 'Default']}
+            options={ ['Arial', 'Comic Sans', 'Default'] }
+            onSelect={ changeFont }
         />
     </div>
 );
