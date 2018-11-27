@@ -7,6 +7,7 @@ import Background from './components/background/Background.jsx';
 import Button from './components/inputs/button/Button.jsx'
 
 import routes from './routes/routes.js'
+import { setCookie, getCookie } from './util/storage.js'
 
 import './styles/App.css';
 
@@ -20,8 +21,8 @@ class App extends Component {
         mouseY: 0,
         backgroundX: 0,
         backgroundY: 0,
-        background: true,
-        font: 'default'
+        background: getCookie('background') === 'on',
+        font: getCookie('font')
     }
 
     componentDidMount() {
@@ -39,7 +40,7 @@ class App extends Component {
         window.requestAnimationFrame(() => this.animate())
     }
 
-    onMouseMove(e) {
+    onMouseMove = (e) => {
         this.setState({
             mouseX: e.nativeEvent.clientX - App.centerX,
             mouseY: e.nativeEvent.clientY - App.centerY
@@ -47,17 +48,15 @@ class App extends Component {
     }
 
     toggleBackground = () => {
-        const { background } = this.state
-
-        this.setState({
-            background: !background
-        });
+        const { background } = this.state;
+        setCookie('background', background ? 'off' : 'on');
+        this.setState({ background: !background });
     }
 
     changeFont = (e) => {
-        this.setState({
-            font: e.nativeEvent.target.value
-        });
+        const font = e.nativeEvent.target.value;
+        setCookie('font', font);
+        this.setState({ font });
     }
 
     render() {
@@ -65,7 +64,7 @@ class App extends Component {
 
         const toggleBackgroundButton = (
             <Button
-                aria-label={`${background ? 'Disable' : 'Enable'} background animation`}
+                aria-label={ `${background ? 'Disable' : 'Enable'} background animation` }
                 onClick={ this.toggleBackground }
             >
                 { `${background ? 'Turn off' : 'Turn on'} background animation` }
@@ -74,8 +73,8 @@ class App extends Component {
 
         return (
             <div
-                className={`App ${font}`}
-                onMouseMove={ this.onMouseMove.bind(this) }
+                className={ `App ${font}` }
+                onMouseMove={ this.onMouseMove }
             >
                 {
                     background

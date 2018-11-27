@@ -1,8 +1,8 @@
 import React from 'react';
 
-import foregroundStars from '../../assets/frontstars.png';
-import middlegroundStars from '../../assets/middlestars.png';
-import backgroundStars from '../../assets/backstars.png';
+import foregroundStars from '../../assets/backgrounds/frontstars.png';
+import middlegroundStars from '../../assets/backgrounds/middlestars.png';
+import backgroundStars from '../../assets/backgrounds/backstars.png';
 
 import '../../styles/components/background/background.css';
 

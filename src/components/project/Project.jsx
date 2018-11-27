@@ -4,16 +4,16 @@ import '../../styles/components/project/project.css'
 
 const Project = ({ project }) => (
   <a
-    href={project.url}
+    href={ project.url }
     target="blank"
-    aria-label={project.name}
-    aria-describedby="project-description"
+    aria-label={ project.name }
+    aria-describedby={ project.title }
   >
     <div className="project">
       <div className="project__overlay">
         <h3 className="project__title">{ project.title }</h3>
 
-        <ul className="project__description" id="project-description">
+        <ul className="project__description" id={ project.title }>
           {project.description.map(listItem => {
             return <li key={listItem}>{listItem}</li>;
           })}
