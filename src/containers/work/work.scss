@@ -15,8 +15,7 @@ $graphic-position: 32px;
 
     &__section {
         display: grid;
-        grid-template-columns: 70% 30%;
-        grid-template-rows: 80% 10% 10%;
+        grid-template-columns: 7fr 3fr;
         align-self: center;
 
         * {
