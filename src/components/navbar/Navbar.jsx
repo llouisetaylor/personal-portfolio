@@ -16,11 +16,6 @@ const Navbar = () => (
             <i className="navbar__icon icon-laptop" />
         </NavLink>
 
-        <NavLink to="/work" className="navbar__item" aria-label="Work">
-            <span className="navbar__text">Work</span>
-            <i className="navbar__icon icon-doc-text" />
-        </NavLink>
-
         <NavLink to="/about" className="navbar__item" aria-label="About">
             <span className="navbar__text">About</span>
             <i className="navbar__icon icon-child" />
