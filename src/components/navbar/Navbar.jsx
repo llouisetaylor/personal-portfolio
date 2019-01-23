@@ -2,28 +2,22 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 import '../../styles/components/navbar/navbar.css';
-import '../../assets/fontello/css/fontello.css';
 
 const Navbar = () => (
     <nav className="navbar">
-        <NavLink exact to="/" className="navbar__item" aria-label="Home">
+        <NavLink exact to="/" className="navbar__item">
             <span className="navbar__text">Home</span>
-            <i className="navbar__icon icon-home" />
+            <span className="navbar__icon" role="img" aria-label="Home">🏠</span>
         </NavLink>
 
-        <NavLink to="/portfolio" className="navbar__item" aria-label="Portfolio">
+        <NavLink to="/portfolio" className="navbar__item">
             <span className="navbar__text">Portfolio</span>
-            <i className="navbar__icon icon-laptop" />
+            <span className="navbar__icon" role="img" aria-label="Portfolio">👩🏼‍💻</span>
         </NavLink>
 
-        <NavLink to="/work" className="navbar__item" aria-label="Work">
-            <span className="navbar__text">Work</span>
-            <i className="navbar__icon icon-doc-text" />
-        </NavLink>
-
-        <NavLink to="/about" className="navbar__item" aria-label="About">
+        <NavLink to="/about" className="navbar__item">
             <span className="navbar__text">About</span>
-            <i className="navbar__icon icon-child" />
+            <span className="navbar__icon" role="img" aria-label="About">🙋🏼‍♀️</span>
         </NavLink>
     </nav>
 );

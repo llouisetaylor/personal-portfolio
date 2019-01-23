@@ -21,7 +21,7 @@ class App extends Component {
         mouseY: 0,
         backgroundX: 0,
         backgroundY: 0,
-        background: getCookie('background') === 'on',
+        background: getCookie('background') === 'on' || getCookie('background') === undefined,
         font: getCookie('font')
     }
 
@@ -36,8 +36,8 @@ class App extends Component {
         this.setState(({ backgroundX, backgroundY, mouseX, mouseY }) => ({
             backgroundX: (((1 - latency) * backgroundX) - (latency * translationRatio * mouseX)),
             backgroundY: (((1 - latency) * backgroundY) - (latency * translationRatio * mouseY))
-        }))
-        window.requestAnimationFrame(() => this.animate())
+        }));
+        window.requestAnimationFrame(() => this.animate());
     }
 
     onMouseMove = (e) => {

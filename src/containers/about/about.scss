@@ -1,6 +1,8 @@
+@import '../../common/breakpoints';
+
 .about {
     align-self: center;
-    width: 75vw;
+    width: 58vw;
     text-align: center;
     margin: 0 auto;
     padding: 30px 0;
@@ -13,5 +15,9 @@
         border: 5px solid white;
         border-radius: 150px;
         box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    @media only screen and (max-width: $lg-max) {
+        width: 75vw;
     }
 }
