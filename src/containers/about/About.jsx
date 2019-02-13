@@ -13,7 +13,7 @@ const About = () => (
             src={ dancing }
             alt="Longboard dancing in front of a corporate building."
         />
-        <p>Hi, my name is Louise, I am a software engineer living in London. { yearsFromNow(new Date('2017, July 18')) } I graduated from the University of Sheffield with a Masters degree in Physics and since then I have been working as a web developer with a particular interest in accessibility and have made some kinda <a href="/portfolio">cool stuff</a>.</p>
+        <p>Hi, my name is Louise, I am a software engineer living in London. { yearsFromNow(new Date('2017/07/18')) } I graduated from the University of Sheffield with a Masters degree in Physics and since then I have been working as a web developer with a particular interest in accessibility and have made some kinda <a href="/portfolio">cool stuff</a>.</p>
         <br />
         <p>These days I work on <a href="https://www.bbc.co.uk/sounds">BBC Sounds</a>, but previously I have worked at Technology Will Save Us and BBC Internal Web Apps.</p>
         <br />
