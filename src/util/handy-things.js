@@ -8,7 +8,9 @@ const yearsFromNow = (date) => {
     const dYears = dMonths / 12
     const roundedYears = Math.round(Math.abs(dYears))
 
-    return `${roundedYears} year${roundedYears > 1 ? 's' : ''} ${dYears < 0 ? 'ago' : 'in the future'}`
+    return roundedYears === 0 
+        ? 'this year'
+        : `${roundedYears} year${roundedYears > 1 ? 's' : ''} ${dYears < 0 ? 'ago' : 'in the future'}`
 };
 
 export {
