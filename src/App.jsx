@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 
+import MetaData from './components/meta-data/MetaData'
 import SettingsBar from './components/settings-bar/SettingsBar';
-import Navbar from './components/navbar/Navbar.jsx';
-import Footer from './components/footer/Footer.jsx';
-import Background from './components/background/Background.jsx';
-import Button from './components/inputs/button/Button.jsx'
+import Navbar from './components/navbar/Navbar';
+import Footer from './components/footer/Footer';
+import Background from './components/background/Background';
+import Button from './components/inputs/button/Button'
 
 import routes from './routes/routes.js'
 import { setCookie, getCookie } from './util/storage.js'
@@ -75,7 +76,8 @@ class App extends Component {
             <div
                 className={ `App ${font}` }
                 onMouseMove={ this.onMouseMove }
-            >
+            >   
+                <MetaData />
                 {
                     background
                         ? <div className="App__background">

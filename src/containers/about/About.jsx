@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 import { yearsFromNow } from '../../util/handy-things'
 
@@ -6,8 +7,16 @@ import '../../styles/containers/about/about.css';
 
 import dancing from '../../assets/louise.jpg';
 
+const metaData = () => (
+    <Helmet>
+        <title>About | Louise Taylor</title>
+        <link rel="canonical" href="https://llouisetaylor.com/about" />
+    </Helmet>
+);
+
 const About = () => (
     <div className="about">
+        { metaData() }
         <img
             className="about__image"
             src={ dancing }
