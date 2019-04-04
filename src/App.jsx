@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 
-import MetaData from './components/meta-data/MetaData'
+import MetaData from './components/meta-data/MetaData';
 import SettingsBar from './components/settings-bar/SettingsBar';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import Background from './components/background/Background';
-import Button from './components/inputs/button/Button'
+import Button from './components/inputs/button/Button';
 
-import routes from './routes/routes.js'
-import { setCookie, getCookie } from './util/storage.js'
+import routes from './routes/routes.js';
+import { setCookie, getCookie } from './util/storage.js';
+import { hasOSReducedMotion } from './util/os.js';
 
 import './styles/App.css';
 
@@ -27,6 +28,11 @@ class App extends Component {
     }
 
     componentDidMount() {
+        if (hasOSReducedMotion() === false) {
+            this.setState({
+                background: false
+            });
+        }
         this.animate();
     }
 
