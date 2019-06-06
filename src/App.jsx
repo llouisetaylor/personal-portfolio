@@ -28,7 +28,7 @@ class App extends Component {
     }
 
     componentDidMount() {
-        if (hasOSReducedMotion() === false) {
+        if (hasOSReducedMotion() === true) {
             this.setState({
                 background: false
             });
