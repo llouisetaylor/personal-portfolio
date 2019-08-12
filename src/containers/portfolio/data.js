@@ -5,7 +5,7 @@ export default {
       url: "https://www.bbc.co.uk/sounds/play/live:bbc_radio_one",
       image: require("../../assets/portfolio-items/sounds-play.jpg"),
       description: ["At BBC Sounds I am a developer on the play page. I am also an accessibility champion and the point of contact with UX."],
-      technologies: ["AWS", "Express", "React", "Webpack", "Mocha"]
+      technologies: ["AWS", "Express", "React", "Webpack"]
     },
     {
       title: "Make",
@@ -15,7 +15,7 @@ export default {
         "Front end lead for a design overhaul to drive sign-ups on an online learning platform.",
         "This involved building several experiences including a user sharing feature and support for multiple translations."
       ],
-      technologies: ["React", "Redux", "Express", "MongoDB", "Mocha"]
+      technologies: ["React", "Redux", "Express", "MongoDB"]
     },
     {
       title: "Electro Dough Manual",
