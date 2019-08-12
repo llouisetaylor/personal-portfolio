@@ -27,7 +27,7 @@ const Porfolio = () => (
   <div className="portfolio">
     { metaData() }
     <section className="portfolio__featured-projects">
-      <h2>Featured projects</h2>
+      <h2>Featured work</h2>
       {renderFeaturedProjects(data.featured)}
     </section>
     <section>
