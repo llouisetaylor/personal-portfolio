@@ -64,7 +64,7 @@ export default {
       url: "https://llouisetaylor.github.io/JSToys/bee-happy/",
       image: "https://llouisetaylor.s3.eu-west-2.amazonaws.com/beehappy.jpg",
       description: [
-        "A small project that determines if a text entry is happy, sad or unknown based on a predetermined set of keywords and displays this on a scale."
+        "Made for a job application - given brief to make a web app that determines if text is happy, sad or unknown - and decided to make a game out of it."
       ],
       technologies: ["jQuery", "VanillaJS"]
     }
