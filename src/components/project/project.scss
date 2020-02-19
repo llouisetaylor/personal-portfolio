@@ -1,22 +1,11 @@
 @import '../../common/variables';
 
 .project {
-    margin: 0 5px 5px 0;
-    display: inline-block;
+    height: 200px;
     position: relative;
     overflow: hidden;
-    width: 29.7vw;
-    height: 28vh;
     border: 1px solid $light-orange;
     box-sizing: border-box;
-
-    @media screen and (max-width: 838px) {
-        width: 49vw;
-    }
-
-    @media screen and (max-width: 552px) {
-        width: 100vw;
-    }
 
     &__overlay {
         padding: $spacer;
