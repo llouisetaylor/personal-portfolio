@@ -1,0 +1,21 @@
+.foreground {
+    position: fixed;
+    z-index: 3;
+    height: 100vh;
+    width: 100vw;
+
+    &__img {
+        position: absolute;
+        bottom: 0;
+    }
+
+    &__left {
+        height: 500px;
+        left: 0;
+    }
+
+    &__right {
+        height: 500px;
+        right: 0;
+    }
+}

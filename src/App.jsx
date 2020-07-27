@@ -4,7 +4,8 @@ import MetaData from './components/meta-data/MetaData';
 import SettingsBar from './components/settings-bar/SettingsBar';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
-import Background from './components/background/Background';
+import Background from './components/scenery/background/Background';
+import Foreground from './components/scenery/foreground/Foreground'
 import Button from './components/inputs/button/Button';
 
 import routes from './routes/routes.js';
@@ -94,6 +95,7 @@ class App extends Component {
                         </div>
                         : null
                 }
+                <Foreground />
 
                 <div className="App__header">
                     <SettingsBar
