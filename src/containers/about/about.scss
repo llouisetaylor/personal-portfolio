@@ -2,17 +2,24 @@
 @import '../../common/variables.scss';
 
 .about {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 
-    &__image {
-        height: 300px;
-        border-radius: 150px;
+    @media only screen and (max-width: $md-max) {
+        margin-top: 20px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: auto;
     }
 
     &__text {
-        margin: 0 200px;
-        @media only screen and (max-width: $lg-max) {
-            margin: $spacer;
+        margin: 0 300px;
+        @media only screen and (max-width: $xl-max) {
+            margin: 0;
         }
     }
 }

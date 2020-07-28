@@ -1,10 +1,16 @@
 @import '../../common/breakpoints';
 
 .settings-bar {
+    position: absolute;
+    z-index: 4;
     display: flex;
     justify-content: flex-end;
-    background: white;
-    width: 100%;
+    width: 100vw;
+
+    @media only screen and (max-width: $md-max) {
+        position: relative;
+        justify-content: center;
+    }
 
     .button, .select {
         @media only screen and (max-width: $sm-max) {

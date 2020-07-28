@@ -1,3 +1,5 @@
+@import '../../../common/breakpoints';
+
 .foreground {
     position: fixed;
     z-index: 3;
@@ -10,12 +12,20 @@
     }
 
     &__left {
-        height: 500px;
+        height: 600px;
         left: 0;
+
+        @media only screen and (max-width: $lg-max) {
+            display: none;
+        }
     }
 
     &__right {
-        height: 500px;
+        height: 600px;
         right: 0;
+
+        @media only screen and (max-width: $sm-max) {
+            height: 300px;
+        }
     }
 }

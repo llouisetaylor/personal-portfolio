@@ -1,4 +1,5 @@
 @import '../../common/variables';
+@import '../../common/breakpoints';
 
 .project {
     height: 200px;
@@ -42,6 +43,10 @@
         li {
             display: inline;
             margin: $spacer;
+        }
+
+        @media only screen and (max-width: $md-max) {
+            display: none;
         }
     }
 

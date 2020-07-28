@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 
+import About from './containers/about/About';
+import Portfolio from './containers/portfolio/Portfolio';
 import MetaData from './components/meta-data/MetaData';
 import SettingsBar from './components/settings-bar/SettingsBar';
-import Navbar from './components/navbar/Navbar';
-import Footer from './components/footer/Footer';
+import ExternalLinks from './components/external-links/ExternalLinks';
 import Background from './components/scenery/background/Background';
 import Foreground from './components/scenery/foreground/Foreground'
 import Button from './components/inputs/button/Button';
 
-import routes from './routes/routes.js';
 import { setCookie, getCookie } from './util/storage.js';
 import { hasOSReducedMotion } from './util/os.js';
 
@@ -29,12 +29,19 @@ class App extends Component {
     }
 
     componentDidMount() {
+        this.scrollToTop();
         if (hasOSReducedMotion() === true) {
             this.setState({
                 background: false
             });
         }
         this.animate();
+    }
+
+    scrollToTop() {
+        console.log('scrolly')
+        window.scrollTo(0, 60)
+        return null
     }
 
     animate() {
@@ -72,45 +79,42 @@ class App extends Component {
 
         const toggleBackgroundButton = (
             <Button
-                aria-label={ `${background ? 'Disable' : 'Enable'} background animation` }
-                onClick={ this.toggleBackground }
+                aria-label={`${background ? 'Disable' : 'Enable'} background animation`}
+                onClick={this.toggleBackground}
             >
-                { `${background ? 'Turn off' : 'Turn on'} background animation` }
+                {`${background ? 'Turn off' : 'Turn on'} background animation`}
             </Button>
         );
 
         return (
             <div
-                className={ `App ${font}` }
-                onMouseMove={ this.onMouseMove }
-            >   
+                className={`App ${font}`}
+                onMouseMove={this.onMouseMove}
+            >
                 <MetaData />
                 {
                     background
                         ? <div className="App__background">
                             <Background
-                                xOffset={ backgroundX }
-                                yOffset={ backgroundY }
+                                xOffset={backgroundX}
+                                yOffset={backgroundY}
                             />
                         </div>
                         : null
                 }
                 <Foreground />
 
-                <div className="App__header">
-                    <SettingsBar
-                        toggleBackgroundButton={ toggleBackgroundButton }
-                        changeFont={ this.changeFont }
-                    />
-                    <Navbar />
-                </div>
+                <SettingsBar
+                    toggleBackgroundButton={toggleBackgroundButton}
+                    changeFont={this.changeFont}
+                />
+                <ExternalLinks />
 
                 <div className="App__content" role="main">
-                    { routes }
+                    <About />
+                    <Portfolio />
                 </div>
-
-                <Footer />
-            </div>
+            </div >
         );
     }
 }
