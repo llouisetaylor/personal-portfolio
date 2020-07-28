@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import About from './containers/about/About';
 import Portfolio from './containers/portfolio/Portfolio';
-import MetaData from './components/meta-data/MetaData';
 import SettingsBar from './components/settings-bar/SettingsBar';
 import ExternalLinks from './components/external-links/ExternalLinks';
 import Background from './components/scenery/background/Background';
@@ -91,7 +90,6 @@ class App extends Component {
                 className={`App ${font}`}
                 onMouseMove={this.onMouseMove}
             >
-                <MetaData />
                 {
                     background
                         ? <div className="App__background">
