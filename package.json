@@ -23,14 +23,13 @@
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/styles --watch --recursive"
   },
   "devDependencies": {
-    "ajv": "^6.12.0",
+    "ajv": "^6.12.3",
     "copyfiles": "^1.2.0",
-    "fibers": "^4.0.2",
+    "fibers": "^4.0.3",
     "morgan": "^1.10.0",
     "node-sass-chokidar": "^1.5.0",
     "npm-run-all": "^4.1.5",
-    "sass": "^1.26.2",
-    "typescript": "^3.8.3"
+    "sass": "^1.26.10"
   },
   "browserslist": [
     ">0.2%",
