@@ -4,7 +4,7 @@ export default {
       title: "BBC Sounds (Play)",
       url: "https://www.bbc.co.uk/sounds/play/live:bbc_radio_one",
       image: "https://llouisetaylor.s3.eu-west-2.amazonaws.com/sounds-play.jpg",
-      description: ["At BBC Sounds I am a developer on the play page. I am also an accessibility champion and the point of contact with UX."],
+      description: ["At the BBC I work on the Sounds website. I lead projects for new features, maintain existing systems and infrastructure and communicate with a multi-disciplinary team on a daily basis."],
       technologies: ["AWS", "Express", "React", "Webpack"]
     },
     {
@@ -34,7 +34,7 @@ export default {
       url: "https://bbc.github.io/sounds-components/",
       image: "https://llouisetaylor.s3.eu-west-2.amazonaws.com/sounds-components.jpg",
       description: ["Core contributer to the BBC Sounds components library."],
-      technologies: ["React", "Sass"]
+      technologies: ["React", "TypeScript", "Sass"]
     },
     {
       title: "Humans in Space",
