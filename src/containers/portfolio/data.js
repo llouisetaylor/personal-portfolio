@@ -1,10 +1,13 @@
 export default {
   featured: [
     {
-      title: "BBC Sounds (Play)",
+      title: "BBC Sounds",
       url: "https://www.bbc.co.uk/sounds/play/live:bbc_radio_one",
       image: "https://llouisetaylor.s3.eu-west-2.amazonaws.com/sounds-play.jpg",
-      description: ["At the BBC I work on the Sounds website. I lead projects for new features, maintain existing systems and infrastructure and communicate with a multi-disciplinary team on a daily basis."],
+      description: [
+        "At the BBC I develop the Sounds website. I frequently lead projects for new features as well as maintaining existing systems and infrastructure.",
+        "On a daily basis I work in a highly collaborative, multi-disciplinary team."
+      ],
       technologies: ["AWS", "Express", "React", "Webpack"]
     },
     {
@@ -29,6 +32,13 @@ export default {
     }
   ],
   other: [
+    {
+      title: "Illustration Shop and Portfolio",
+      url: "https://www.louiseanntaylor.com",
+      image: "https://llouisetaylor.s3.eu-west-2.amazonaws.com/Screen+Shot+2021-01-26+at+22.37.06.png",
+      description: ["Currently building an ecommerce website and portfolio for my illustrations."],
+      technologies: ["Netlify", "MongoDB", "GraphQL", "Stripe API", "Styled Components"]
+    },
     {
       title: "Sounds Components",
       url: "https://bbc.github.io/sounds-components/",
