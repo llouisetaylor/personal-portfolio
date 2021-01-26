@@ -38,7 +38,6 @@ class App extends Component {
     }
 
     scrollToTop() {
-        console.log('scrolly')
         window.scrollTo(0, 60)
         return null
     }
