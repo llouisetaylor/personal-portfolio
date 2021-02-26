@@ -57,7 +57,7 @@ export default {
     },
     {
       title: "Dough Universe",
-      url: "https://play.google.com/store/apps/details?id=com.arnold&hl=en",
+      url: "https://apps.apple.com/gb/app/dough-universe/id1248287725",
       image: "https://llouisetaylor.s3.eu-west-2.amazonaws.com/doughuniverse.jpg",
       description: ["Supported the development of a native app."],
       technologies: ["React Native"]
