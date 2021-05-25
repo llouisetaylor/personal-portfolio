@@ -5,8 +5,8 @@ export default {
       url: "https://www.bbc.co.uk/sounds/play/live:bbc_radio_one",
       image: "https://llouisetaylor.s3.eu-west-2.amazonaws.com/sounds-play.jpg",
       description: [
-        "At the BBC I develop the Sounds website. I frequently lead projects for new features as well as maintaining existing systems and infrastructure.",
-        "On a daily basis I work in a highly collaborative, multi-disciplinary team."
+        "At the BBC I develop the Sounds website. I frequently lead projects, working cross-discipline with architects, product, design and testers. As well as leading development with a team of engineers.",
+        "I maintain systems and infrastructure as well as offering out-of-hours support."
       ],
       technologies: ["AWS", "Express", "React", "Webpack"]
     },
@@ -32,6 +32,27 @@ export default {
     }
   ],
   other: [
+    {
+      title: "BBC Sounds Schedules",
+      url: "https://www.bbc.co.uk/sounds/schedules/bbc_radio_one",
+      image: "https://llouisetaylor.s3.eu-west-2.amazonaws.com/schedules.png",
+      description: ["Technical lead for the build of the schedules pages. This involved interfacing with a legacy API and handling time based problems."],
+      technologies: ["React", "Redux", "TypeScript", "Express"]
+    },
+    {
+      title: "BBC Sounds Stations",
+      url: "https://www.bbc.co.uk/sounds/stations",
+      image: "https://llouisetaylor.s3.eu-west-2.amazonaws.com/stations.png",
+      description: ["Technical lead for project to build the Stations page on BBC Sounds."],
+      technologies: ["React", "Redux", "TypeScript", "Express"]
+    },
+    {
+      title: "BBC Network Home Pages (NHP)",
+      url: "https://www.bbc.co.uk/sounds/play/live:bbc_radio_two",
+      image: "https://llouisetaylor.s3.eu-west-2.amazonaws.com/nhp_decom.png",
+      description: ["Technical lead for project to decommission NHPs in the BBC, implementing new APIs, building front end features and rerouting traffic."],
+      technologies: ["React", "Redux", "TypeScript", "Express"]
+    },
     {
       title: "Illustration Shop and Portfolio",
       url: "https://www.louiseanntaylor.com",
@@ -74,7 +95,7 @@ export default {
       url: "https://llouisetaylor.github.io/JSToys/bee-happy/",
       image: "https://llouisetaylor.s3.eu-west-2.amazonaws.com/beehappy.jpg",
       description: [
-        "Gamified a web app that determines if text is happy, sad or unknown."
+        "A project that holds sentimental value to me. My first job application to create a web app that determines how happy a string of text is based on a set of key words."
       ],
       technologies: ["jQuery", "VanillaJS"]
     }
